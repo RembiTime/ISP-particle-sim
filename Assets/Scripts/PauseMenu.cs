@@ -12,7 +12,7 @@ public class PauseMenu : MonoBehaviour
     public enum ScreenEdgeBehavior {Loop, Bounce, Destroy};
 
     void Start() {
-        RainbowSmall();
+        QuotePerfect();
     }
 
     // Update is called once per frame
@@ -48,21 +48,21 @@ public class PauseMenu : MonoBehaviour
     public void ChangePreset(int id) {
         switch (id) {
             case 0:
-                RainbowSmall(); break;
-            case 1:
-                RainbowMid(); break;
-            case 2:
-                BirthdayCake(); break;
-            case 3:
-                Bonk(); break;
-            case 4:
-                Jellyfish(); break;
-            case 5:
-                ShootingStars(); break;
-            case 6:
-                Tadpoles(); break;
-            case 7:
                 QuotePerfect(); break;
+            case 1:
+                RainbowSmall(); break;
+            case 2:
+                RainbowMid(); break;
+            case 3:
+                BirthdayCake(); break;
+            case 4:
+                Bonk(); break;
+            case 5:
+                Jellyfish(); break;
+            case 6:
+                ShootingStars(); break;
+            case 7:
+                Tadpoles(); break;
         }
         Resume();
     }
